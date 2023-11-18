@@ -1,25 +1,41 @@
 import { Grid, TextField, Typography, Box, Divider } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
+
 import Sunny from "../../assets/Sunny.gif";
 import "./style.css";
+import { useContext } from "react";
+import { LocationContext } from "../../context/LocationContext";
+import { capitalizeFirstWord } from "../../utils/letter/capitalizeFirstWord";
+import SearchBox from "../Search/SearchBox";
+import { WeatherContext } from "../../context/WeatherContext";
+import { UnitContext } from "../../context/UnitContext";
+import { convertToCelsius } from "../../utils/unitConversion";
+import CloudCondition from "../CloudCondition/CloudCondition";
+import RainCondition from "../RainConditon/RainCondition";
+import WeatherIcon from "../WeatherIcon/WeatherIcon";
+import Location from "../Location/Location";
 export default function MainWeather() {
   function getDayName(date = new Date(), locale = "en-US") {
     return date.toLocaleDateString(locale, { weekday: "long" });
   }
+  const { state } = useContext(LocationContext);
+  const weatherConditions = useContext(WeatherContext);
+  const { isCelsius, setCelsius } = useContext(UnitContext);
+  console.log("Weather conditions", weatherConditions.temperature);
   return (
     <Grid xs={4} item sx={{ borderRight: "2px solid #F5F5F5" }}>
       <Box>
-        <Box sx={{ display: "flex", alignItems: "flex-end" }}>
-          <SearchIcon sx={{ color: "#DDE6ED" }} />
-          <TextField label="Search for places..." variant="standard" />
-        </Box>
+        <SearchBox />
         <Box sx={{ marginTop: 4 }}>
-          <img className="img" src={Sunny} alt="sunny-img-gif" />
+          <WeatherIcon />
         </Box>
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <Typography variant="h2" component="p">
-            <span style={{ fontWeight: "300" }}>12</span>
-            <sup>&deg;C</sup>
+            <span style={{ fontWeight: "300" }}>
+              {isCelsius
+                ? convertToCelsius(weatherConditions.temperature)
+                : weatherConditions.temperature}
+            </span>
+            <sup>{isCelsius ? "\u00b0C" : "\u00b0F"}</sup>
           </Typography>
         </Box>
         <Box display="flex" alignItems="baseline" gap={1}>
@@ -34,11 +50,13 @@ export default function MainWeather() {
             {new Date().getHours()}:{new Date().getMinutes()}
           </Typography>
         </Box>
-        <Divider sx={{width: "300px", marginY: 3}}/>
+        <Divider sx={{ width: "300px", marginY: 3 }} />
         <Box>
-            <Typography variant="subtitle2">Mostly Cloudy</Typography>
-            <Typography variant="subtitle2">Rain - 30%</Typography>
-            <Typography marginY={4}>User Location</Typography>
+          <CloudCondition />
+          <RainCondition />
+          <Box sx={{width: "300px"}}>
+            <Location />
+          </Box>
         </Box>
       </Box>
     </Grid>

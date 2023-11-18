@@ -1,0 +1,43 @@
+{
+  "coord": {
+    "lon": -89.1028,
+    "lat": 30.438
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 68.5,
+    "feels_like": 69.01,
+    "temp_min": 64.69,
+    "temp_max": 69.8,
+    "pressure": 1012,
+    "humidity": 84
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 3.44,
+    "deg": 310
+  },
+  "clouds": {
+    "all": 0
+  },
+  "dt": 1700279907,
+  "sys": {
+    "type": 2,
+    "id": 2015175,
+    "country": "US",
+    "sunrise": 1700223835,
+    "sunset": 1700261942
+  },
+  "timezone": -21600,
+  "id": 4429197,
+  "name": "Landon",
+  "cod": 200
+}
