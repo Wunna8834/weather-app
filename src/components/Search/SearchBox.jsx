@@ -16,7 +16,6 @@ export default function SearchBox() {
         setLocation("")
     }
   }
-  console.log("Search value", location)
   return (
     <Box sx={{ display: "flex", alignItems: "flex-end" }}>
       <SearchIcon sx={{ color: "#DDE6ED" }} />

@@ -13,14 +13,14 @@ import CloudCondition from "../CloudCondition/CloudCondition";
 import RainCondition from "../RainConditon/RainCondition";
 import WeatherIcon from "../WeatherIcon/WeatherIcon";
 import Location from "../Location/Location";
+import { getDayName } from "../../utils/date_time/getDayName";
+import CurretnTime from "../CurrentTime/CurrentTime";
 export default function MainWeather() {
-  function getDayName(date = new Date(), locale = "en-US") {
-    return date.toLocaleDateString(locale, { weekday: "long" });
-  }
+  
   const { state } = useContext(LocationContext);
   const weatherConditions = useContext(WeatherContext);
   const { isCelsius, setCelsius } = useContext(UnitContext);
-  console.log("Weather conditions", weatherConditions.temperature);
+
   return (
     <Grid xs={4} item sx={{ borderRight: "2px solid #F5F5F5" }}>
       <Box>
@@ -42,13 +42,7 @@ export default function MainWeather() {
           <Typography variant="h6" component="p">
             {getDayName()},
           </Typography>
-          <Typography
-            variant="h6"
-            component="p"
-            sx={{ fontWeight: 200, color: "#9BA4B5" }}
-          >
-            {new Date().getHours()}:{new Date().getMinutes()}
-          </Typography>
+          <CurretnTime />
         </Box>
         <Divider sx={{ width: "300px", marginY: 3 }} />
         <Box>
