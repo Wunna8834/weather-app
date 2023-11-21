@@ -22,5 +22,209 @@
   {
     "city": "Yangon",
     "timezone": "Asia/Rangoon"
+  },
+  {
+    "city": "Paris",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "city": "Dubai",
+    "timezone": "Asia/Dubai"
+  },
+  {
+    "city": "Toronto",
+    "timezone": "America/Toronto"
+  },
+  {
+    "city": "Mumbai",
+    "timezone": "Asia/Kolkata"
+  },
+  {
+    "city": "Beijing",
+    "timezone": "Asia/Shanghai"
+  },
+  {
+    "city": "Cape Town",
+    "timezone": "Africa/Johannesburg"
+  },
+  {
+    "city": "Moscow",
+    "timezone": "Europe/Moscow"
+  },
+  {
+    "city": "Rio de Janeiro",
+    "timezone": "America/Sao_Paulo"
+  },
+  {
+    "city": "Auckland",
+    "timezone": "Pacific/Auckland"
+  },
+  {
+    "city": "Berlin",
+    "timezone": "Europe/Berlin"
+  },
+  {
+    "city": "Chicago",
+    "timezone": "America/Chicago"
+  },
+  {
+    "city": "Hong Kong",
+    "timezone": "Asia/Hong_Kong"
+  },
+  {
+    "city": "Johannesburg",
+    "timezone": "Africa/Johannesburg"
+  },
+  {
+    "city": "Madrid",
+    "timezone": "Europe/Madrid"
+  },
+  {
+    "city": "Singapore",
+    "timezone": "Asia/Singapore"
+  },
+  {
+    "city": "Istanbul",
+    "timezone": "Europe/Istanbul"
+  },
+  {
+    "city": "Bangkok",
+    "timezone": "Asia/Bangkok"
+  },
+  {
+    "city": "Vancouver",
+    "timezone": "America/Vancouver"
+  },
+  {
+    "city": "Rome",
+    "timezone": "Europe/Rome"
+  },
+  {
+    "city": "Seoul",
+    "timezone": "Asia/Seoul"
+  },
+  {
+    "city": "Sao Paulo",
+    "timezone": "America/Sao_Paulo"
+  },
+  {
+    "city": "Amsterdam",
+    "timezone": "Europe/Amsterdam"
+  },
+  {
+    "city": "Dublin",
+    "timezone": "Europe/Dublin"
+  },
+  {
+    "city": "Stockholm",
+    "timezone": "Europe/Stockholm"
+  },
+  {
+    "city": "Vienna",
+    "timezone": "Europe/Vienna"
+  },
+  {
+    "city": "Hanoi",
+    "timezone": "Asia/Ho_Chi_Minh"
+  },
+  {
+    "city": "Prague",
+    "timezone": "Europe/Prague"
+  },
+  {
+    "city": "Buenos Aires",
+    "timezone": "America/Argentina/Buenos_Aires"
+  },
+  {
+    "city": "Lima",
+    "timezone": "America/Lima"
+  },
+  {
+    "city": "Cairo",
+    "timezone": "Africa/Cairo"
+  },
+  {
+    "city": "Mexico City",
+    "timezone": "America/Mexico_City"
+  },
+  {
+    "city": "Oslo",
+    "timezone": "Europe/Oslo"
+  },
+  {
+    "city": "Brussels",
+    "timezone": "Europe/Brussels"
+  },
+  {
+    "city": "Warsaw",
+    "timezone": "Europe/Warsaw"
+  },
+  {
+    "city": "Brisbane",
+    "timezone": "Australia/Brisbane"
+  },
+  {
+    "city": "Edinburgh",
+    "timezone": "Europe/London"
+  },
+  {
+    "city": "Helsinki",
+    "timezone": "Europe/Helsinki"
+  },
+  {
+    "city": "Lisbon",
+    "timezone": "Europe/Lisbon"
+  },
+  {
+    "city": "Kuala Lumpur",
+    "timezone": "Asia/Kuala_Lumpur"
+  },
+  {
+    "city": "Manila",
+    "timezone": "Asia/Manila"
+  },
+  {
+    "city": "Caracas",
+    "timezone": "America/Caracas"
+  },
+  {
+    "city": "Guatemala City",
+    "timezone": "America/Guatemala"
+  },
+  {
+    "city": "Nairobi",
+    "timezone": "Africa/Nairobi"
+  },
+  {
+    "city": "Jakarta",
+    "timezone": "Asia/Jakarta"
+  },
+  {
+    "city": "Athens",
+    "timezone": "Europe/Athens"
+  },
+  {
+    "city": "Ljubljana",
+    "timezone": "Europe/Ljubljana"
+  },
+  {
+    "city": "Nicosia",
+    "timezone": "Asia/Nicosia"
+  },
+  {
+    "city": "Kiev",
+    "timezone": "Europe/Kiev"
+  },
+  {
+    "city": "Tehran",
+    "timezone": "Asia/Tehran"
+  },
+  {
+    "city": "San Francisco",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "city": "Denver",
+    "timezone": "America/Denver"
   }
 ]

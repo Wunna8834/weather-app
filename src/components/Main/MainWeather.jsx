@@ -29,7 +29,7 @@ export default function MainWeather() {
           <WeatherIcon />
         </Box>
         <Box sx={{ display: "flex", alignItems: "center" }}>
-          <Typography variant="h2" component="p">
+          <Typography variant="h3" component="p">
             <span style={{ fontWeight: "300" }}>
               {isCelsius
                 ? convertToCelsius(weatherConditions.temperature)
