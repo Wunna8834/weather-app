@@ -1,4 +1,4 @@
-import { Button, IconButton, Box } from "@mui/material";
+import { Button, IconButton, Box, useTheme } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { useState, useContext } from "react";
 import { UnitContext } from "../../context/UnitContext";
@@ -23,8 +23,11 @@ export default function UnitBtn() {
     setActive("button2");
     setCelsius(false);
   }
+  const theme = useTheme()
   return (
-    <Box display="flex" justifyContent="flex-end" gap={1}>
+    <Box display="flex" justifyContent="flex-end" gap={1} sx={{[theme.breakpoints.down("md")]: {
+      flexDirection: "column"
+    }}}>
       <BootstrapButton
         variant="contained"
         sx={{

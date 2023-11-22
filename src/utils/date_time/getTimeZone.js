@@ -1,4 +1,3 @@
-import cityTimezones from "city-timezones";
 import cities from "./time_zones.json";
 import { capitalizeFirstWord } from "../letter/capitalizeFirstWord";
 export function getCityTimeZone(location) {

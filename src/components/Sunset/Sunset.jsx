@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { WeatherContext } from "../../context/WeatherContext";
 import { Box } from "@mui/material";
+import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
+import ArrowCircleDownIcon from "@mui/icons-material/ArrowCircleDown";
 
 export default function Sunset() {
   const { sunrise, sunset } = useContext(WeatherContext);
@@ -16,8 +18,16 @@ export default function Sunset() {
   };
   return (
     <>
-      <p>Sunrise: {formatTime(sunsetTime)}</p>
-      <p>Sunset: {formatTime(sunriseTime)}</p>
+      <Box display={"flex"} alignItems={"center"}>
+        <ArrowCircleUpIcon color="warning" fontSize="large" />
+        <p> {formatTime(sunsetTime)}</p>
+      </Box>
+      <Box display={"flex"} alignItems={"center"}>
+        <ArrowCircleDownIcon color="warning" fontSize="large" />{" "}
+        <p>{formatTime(sunriseTime)}</p>
+      </Box>
+
+      
     </>
   );
 }

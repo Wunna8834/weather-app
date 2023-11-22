@@ -10,9 +10,9 @@ const INITIAL_STATE = {
   wind_status: 3.44,
   wind_direction: 310,
   visibility: 7000,
-  pressure: 1012,
-  sunrise: 1700223835,
-  sunset: 1700261942,
+  pressure: 1400,
+  sunrise: 1700264451,
+  sunset: 1700305215,
 };
 
 export const WeatherContext = createContext(INITIAL_STATE);
