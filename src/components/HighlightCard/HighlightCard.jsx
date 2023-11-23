@@ -2,7 +2,7 @@ import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 export default function HighlightCard({ weather_status, component, delay }) {
   return (
-    <Grid item md={4}>
+    <Grid item md={4} xs={12}>
       <motion.div
         initial={{ opacity: 0, translateX: 50 }}
         animate={{ opacity: 1, translateX: 0 }}

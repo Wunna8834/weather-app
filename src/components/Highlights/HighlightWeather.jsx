@@ -7,7 +7,8 @@ import Visibility from "../Visibility/Visibility";
 import Sunset from "../Sunset/Sunset";
 import PressureStatus from "../Pressure/PressureStatus";
 import StaggerAnimation from "../Animate/StaggerAnimation";
-
+import { motion } from "framer-motion";
+import EntranceAnimation from "../Animate/EntranceAnimation";
 export default function HighlightWeather() {
   const theme = useTheme();
   return (
@@ -34,29 +35,31 @@ export default function HighlightWeather() {
         <UnitBtn />
       </Box>
       <Box>
-        <Typography variant="h5" fontWeight={400} fontFamily="Poppins">
-          Today's Highlights
-        </Typography>
+        <EntranceAnimation>
+          <Typography variant="h5" fontWeight={400} fontFamily="Poppins">
+            Today's Highlights
+          </Typography>
+        </EntranceAnimation>
 
         <Grid container spacing={2} marginTop={1}>
           <HighlightCard
             weather_status="Wind Status"
-            component=<WindStatus />
-            delay= {1}
+            component= {<WindStatus />}
+            delay={1}
           />
           <HighlightCard
             weather_status="Humidity"
-            component=<HumidityStatus />
+            component={<HumidityStatus />}
             delay={2}
           />
           <HighlightCard
             weather_status="Visibility"
-            component=<Visibility />
+            component={<Visibility />}
             delay={3}
           />
           <HighlightCard
             weather_status="Sunrise & Sunset"
-            component=<Sunset />
+            component={<Sunset />}
             delay={4}
           />
           {/* <HighlightCard
